@@ -7,21 +7,16 @@ CVRecord = namedtuple('CVRecord', ['name', 'frame', 'figures', 'imtype'])
 
 class LoggerCV:
   def __init__(self, enabled, log_rate):
-    self.enabled=enabled
+    self.__enabled = enabled
     self.log_rate = log_rate
     self.records = []
 
-  def enabled(self):
-    return self.enabled
+  def enabled(self, frame_count):
+    return self.__enabled and frame_count % self.log_rate == 0
 
 
   def log_rate(self):
     return self.log_rate
-
-
-  def log_frame(self, frame_count):
-    return frame_count % self.log_rate == 0
-
 
   def log(self, record):
     self.records.append(record)

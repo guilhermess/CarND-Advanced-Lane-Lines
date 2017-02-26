@@ -51,6 +51,6 @@ if __name__ == '__main__':
   for test_img in test_images:
     img = cv2.imread(test_img)
     undistorted_img = cv2.undistort(img,camera_matrix, distortion_coeff, None, camera_matrix)
-    cv2.imshow(undistorted_img)
+    cv2.imshow(test_img, undistorted_img)
     cv2.waitKey()
     cv2.destroyAllWindows()
