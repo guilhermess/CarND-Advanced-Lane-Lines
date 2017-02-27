@@ -36,9 +36,11 @@ an undistorted view of the road.
 Here is an example of an original camera image from the road and its corresponding undistorted image:
 
 * Original:
+
 ![alt text](./output_images/originalf0.png "Original Camera Image")
 
 * Undistorted:
+
 ![alt text](./output_images/undistortedf0.png "Undistorted Camera Image")
 
 The frame undistortion is implemented in LaneLinePipeline::process_image. It receives as parameter the calibration
