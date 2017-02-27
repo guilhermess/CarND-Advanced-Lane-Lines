@@ -132,7 +132,9 @@ tuning of the parameters, together with a more robust accept/reject of lane fit 
 videos with marked lane lines for the project_video and the challenge_video. 
 
 * Project Video:
+
 [![IMAGE ALT Project Video](http://img.youtube.com/vi/VOgbPBuVFKY/0.jpg)](http://www.youtube.com/watch?v=VOgbPBuVFKY)
 
 * Challenge Video:
+
 [![IMAGE ALT Challenge Video](http://img.youtube.com/vi/t9HOA1BMOGU/0.jpg)](http://www.youtube.com/watch?v=t9HOA1BMOGU)
