@@ -74,11 +74,11 @@ birds_eye_matrix_road.
 ### Detecting Lane Pixels:
 The next step in the pipeline consists of detecting (x,y) pixels that are part of the lane lines. We use 2 different
 methods to detect the points: histogram and iterative. The algorithm implemented in this project uses the iterative method
-when there a previous lane is available, but it also checks if the values are compatible with the lanes from the previous frame.
-It falls back to the histogram method when the current frame lanes deviates too much from the previous frame lanes.
+when a previous lane is available, but it also checks if the values are compatible with the lanes identified in the previous frame.
+It falls back to the histogram method when the current frame lanes deviate too much from the previous frame lanes.
 
 #### Histogram Method
-The histogram method uses a histogram of 1 pixels in a given column of the lower half part of the image, using the peaks
+The histogram method uses a histogram of pixels binary values in a given column of the lower half part of the image, using the peaks
 in the histogram as starting X coordinates for tracing left and right lanes. A search window is applied centered in the
 X coordinates and iteratively moved in the Y axis to detect more points that are part of the lane.
 Below is a sample histogram:
