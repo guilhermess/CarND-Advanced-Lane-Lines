@@ -35,7 +35,7 @@ if __name__ == '__main__':
   parser.add_argument('-calibration_images', help='Directory containing camera calibration images', action='store', default='./camera_cal/*.jpg')
   parser.add_argument('-calibration_nx', help='Number of x vertices in calibration images chess board', action='store', default=9)
   parser.add_argument('-calibration_ny', help='Number of y vertices in calibration images chess board', action='store', default=6)
-  parser.add_argument('-log_enabled', help='Path to file to store the log', action='store', default=True)
+  parser.add_argument('-log_enabled', help='Path to file to store the log', action='store', default=False)
   parser.add_argument('-log_dir', help='Path to file to store the log', action='store', default='./log')
   parser.add_argument('-log_rate', help='Every % frames store image in log. Valid only if log is enabled', action='store', default=25)
   args = parser.parse_args()

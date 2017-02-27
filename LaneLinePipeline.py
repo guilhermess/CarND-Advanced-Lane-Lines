@@ -49,6 +49,7 @@ class LaneLinePipeline:
     undistorted_image = cv2.undistort(image, self.camera_matrix, self.distortion_coeff, None, self.camera_matrix)
 
     if self.logger.enabled(self.frame_count):
+      self.logger.log(CVRecord("original", self.frame_count, [image], 'opencv'))
       self.logger.log(CVRecord("undistorted", self.frame_count, [undistorted_image], 'opencv'))
 
     # step 2: compute threshold image
